@@ -1,4 +1,4 @@
-require 'args.rb'
+require_relative 'args.rb'
 
 def main()
   parser = Args.expect do

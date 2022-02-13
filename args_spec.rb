@@ -1,7 +1,5 @@
-require 'rubygems'
-gem 'rspec'
 require 'rspec'
-require 'args'
+require_relative 'args'
 
 describe Args, "With no arguments" do
   before do
@@ -158,6 +156,3 @@ describe Args, "With a single number-list element" do
     @parser["l"].should == [1, 2, 3, 4]
   end
 end
-
-
-
